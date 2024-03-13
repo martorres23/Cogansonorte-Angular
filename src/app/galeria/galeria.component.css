@@ -1,0 +1,118 @@
+:host {
+    display: block;
+    text-align: center;
+}
+.gallery-lightbox-container {
+    position: relative;
+    display: inline-block;
+    padding: 25px;
+
+    .gallery {
+        line-height: 0;
+        column-count: 4;
+        column-gap: 20px;
+
+        .gallery-img img{
+            width: 100%;
+            height: auto;
+            cursor:zoom-in;
+            border-radius: .30rem;
+            margin-bottom:30px;
+            box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .21);
+        }
+    }
+}
+      
+@media screen and (max-width:1024px){
+    .gallery-lightbox-container{
+        .gallery{
+            column-count: 2;
+            width: 100%;
+        }
+        .gallery-img img{
+            width: 100%;
+
+        }
+    }
+}
+        
+@media screen and (max-width:800px){
+    .gallery-lightbox-container{
+
+        .gallery{
+            column-count: 3;
+        }
+            
+        .gallery-img img{
+            max-width: 100%;   
+        }
+    }
+}
+
+@media screen and (max-width:650px){
+    .gallery-lightbox-container{
+        .gallery{
+            column-count: 2;
+          
+        }
+        .gallery-img img{
+            max-width: 100%;
+            
+                
+        }
+    }
+}
+
+/*.portada_galeria{
+    position:relative;
+    text-align:center;
+    background-color:rgb(15, 160, 39)
+}
+.portada_galeria h1{
+    top: 30%;
+    left: 50%;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding: 5px 5px;
+}
+.portada_galeria img {
+    filter: brightness(0.4);
+}
+.galery{
+    background-color:rgb(255, 255, 255);
+}
+.grid-container{
+    display:grid;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap:20px; 
+    justify-content: center;
+    margin: 0 auto;
+    padding: auto;
+    padding-top: 30px;
+}
+.grid-item{
+    width:230px;
+    margin-bottom:30px;
+    border-radius: 15px;
+    cursor: zoom-in;
+    background-color: lightgray;
+}
+.grid-item:hover{
+    filter: opacity(0.9);
+}
+
+@media only screen and (min-width: 300px) {
+    .portada_galeria h1{
+        font-size: 25px;
+    }
+}
+    
+@media screen and (max-width: 500px) {
+    .portada_galeria h1{
+        font-size: 25px;
+    }
+}*/
+  

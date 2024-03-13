@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid"> 
+    <div class="d-flex justify-content-start align-items-center"> 
+      <img class="logo" src="assets/cogansonortee.png">
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="isNavbarCollapsed = !isNavbarCollapsed">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav" [ngClass]="{'show': isNavbarCollapsed}">
+      <ul class="navbar-nav">
+        <button *ngIf="isNavbarCollapsed" class="navbar-toggler d-lg-none" type="button" (click)="isNavbarCollapsed = false">
+          <span class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></span> <!-- Botón de cerrar con una X -->
+        </button>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="inicio" (click)="isNavbarCollapsed = false">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="servicios" (click)="isNavbarCollapsed = false">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="productos" (click)="isNavbarCollapsed = false">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="galeria"(click)="isNavbarCollapsed = false">Galería</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contacto"(click)="isNavbarCollapsed = false">Contacto</a>
+        </li>
+      </ul>  
+    </div>
+  </div>
+</nav>

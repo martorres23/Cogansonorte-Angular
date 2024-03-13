@@ -1,0 +1,110 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  nav {
+    background-color: rgb(245, 245, 245);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px; 
+  }
+  .navbar-nav .nav-item {
+    margin-right: 10px;
+  }
+
+
+  .logo {
+    margin:0;
+    max-width:350px;
+    padding: 0 30px;
+    height: auto;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  
+  li:first-child {
+    margin-right: auto;
+  }
+  
+  a {
+    height:100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display:flex;
+    align-items:center;
+    color: black;
+  }
+  li {
+    text-align: center;
+    height: 50px;
+  }
+
+  @media (min-width: 770px) {
+    ul a:hover {
+      height: 40px;
+      width: 80px;
+      display: flex;
+      justify-content:center;
+      border-radius: 17px;
+      background-color:#1fbe0a;
+      background: linear-gradient(to right,#1fbe0a, #45d42f);
+      color: #fff;
+    }
+  }
+  @media (max-width: 769px) {
+    .navbar-expand-lg {
+      flex-direction: column;
+    }
+    .navbar-toggler {
+      display: block;
+    }
+    .navbar-collapse {
+      display: none;
+    }
+    .navbar-collapse.show {
+      display: block;
+    }
+    .navbar-nav .dropdown-menu {
+      position: static;
+      float: none;
+    }
+    .logo {
+      max-width:240px;
+    }
+
+    .navbar-collapse{
+      position:fixed;
+      top:0;
+      right:0;
+      height:100vh;
+      width:250px;
+      z-index:999;
+      backdrop-filter:blur(5px);
+      background-color: rgba(255, 255, 255, 0.575);
+      box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      transition: transform 0.3s ease-in-out;
+    }
+    .navbar-collapse ul a:hover {
+      height: 40px;
+      width: 80px;
+      display: flex;
+      justify-content:none;
+      color: #1fbe0a;
+    }
+  }

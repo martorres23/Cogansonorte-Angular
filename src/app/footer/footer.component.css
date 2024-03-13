@@ -1,0 +1,23 @@
+footer{
+    display: flex;
+    background-color:rgb(1, 1, 15);
+    color:#fff;
+    height: 80px;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+    position:relative;
+    bottom:0;
+}
+footer img{
+    margin:0;
+    max-width:120px;
+    padding: 0 30px;
+    height: auto;
+}
+footer h3{
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+}
+
